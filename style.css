@@ -1,0 +1,133 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #eee; /* Light text */
+}
+
+/* Basic container styling for covered edges */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Light background for sections */
+    border-radius: 10px; /* Covered edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Dark Mode for container */
+.container.dark-mode {
+    background-color: #222; /* Darker background for dark mode */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow for dark mode */
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+header.dark-mode {
+    background-color: #333;
+    border-bottom: 1px solid #555;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+header.dark-mode h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav.dark-mode a {
+    color: #eee;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section.dark-mode {
+    background-color: #222;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+section.dark-mode h2 {
+    color: #fff;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #eee;
+    color: #777;
+}
+
+footer.dark-mode {
+    background-color: #333;
+    border-top: 1px solid #555;
+    color: #bbb;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
